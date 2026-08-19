@@ -4,6 +4,13 @@
    Diseño tradicional / elegante
    ========================================================= */
 
+@font-face {
+    font-family: "Edwardian Script";
+    src: url("fonts/edwardian-script-itc.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* ---------- RESET ---------- */
 
@@ -305,11 +312,12 @@ li {
 }
 
 .firma {
-    font-size: 27px;
-
-    font-style: italic;
-
+    font-family: "Edwardian Script", cursive;
+    font-size: 48px;
+    font-weight: normal;
+    font-style: normal;
     color: #292724;
+    line-height: 1;
 }
 
 
