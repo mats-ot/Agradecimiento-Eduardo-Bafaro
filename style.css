@@ -1,0 +1,439 @@
+```css
+/* =========================================
+   ROQUE3D — EDUARDO BAFARO
+   Diseño responsive para NFC / celular
+   ========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  background: #f5f7fa;
+  color: #18202a;
+  line-height: 1.75;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    radial-gradient(circle at 50% 20%, #263b55 0%, #101923 45%, #070c11 100%);
+
+  color: white;
+  padding: 40px 24px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  margin-bottom: 55px;
+}
+
+.brand span,
+.footer-brand span {
+  opacity: 0.65;
+}
+
+.nfc-icon {
+  width: 76px;
+  height: 76px;
+
+  margin: 0 auto 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 50%;
+
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 700;
+
+  background: rgba(255,255,255,0.05);
+}
+
+.hero h1 {
+  font-size: clamp(40px, 10vw, 72px);
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: -2px;
+}
+
+.subtitle {
+  margin-top: 22px;
+  font-size: 17px;
+  color: rgba(255,255,255,0.72);
+}
+
+.scroll-hint {
+  margin-top: 70px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+
+/* =========================================
+   SECCIONES
+   ========================================= */
+
+main section {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 90px 25px;
+}
+
+.section-number {
+  display: block;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+
+  color: #718096;
+
+  margin-bottom: 14px;
+}
+
+h2 {
+  font-size: clamp(30px, 7vw, 44px);
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -1px;
+
+  margin-bottom: 35px;
+}
+
+p {
+  font-size: 17px;
+  color: #4a5568;
+  margin-bottom: 22px;
+}
+
+strong {
+  color: #202b38;
+}
+
+
+/* =========================================
+   INTRO
+   ========================================= */
+
+.intro {
+  background: #ffffff;
+}
+
+
+/* =========================================
+   TIMELINE
+   ========================================= */
+
+.timeline-section {
+  background: #f5f7fa;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 50px;
+}
+
+.timeline::before {
+  content: "";
+
+  position: absolute;
+  left: 88px;
+  top: 0;
+  bottom: 0;
+
+  width: 1px;
+
+  background: #cbd5e0;
+}
+
+.timeline-item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 110px 1fr;
+
+  margin-bottom: 50px;
+}
+
+.timeline-item::before {
+  content: "";
+
+  position: absolute;
+
+  left: 83px;
+  top: 7px;
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #718096;
+  border: 3px solid #f5f7fa;
+}
+
+.timeline-year {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #718096;
+
+  padding-right: 20px;
+}
+
+.timeline-content {
+  padding-left: 25px;
+}
+
+.timeline-content h3 {
+  font-size: 21px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.timeline-content p {
+  font-size: 15px;
+}
+
+
+/* =========================================
+   LABORATORIO
+   ========================================= */
+
+.laboratorio {
+  background: white;
+}
+
+
+/* =========================================
+   AGRADECIMIENTOS
+   ========================================= */
+
+.thanks {
+  background: #eef2f6;
+}
+
+.phone {
+  display: inline-block;
+
+  margin: 5px 0 25px;
+  padding: 12px 20px;
+
+  background: white;
+  border-radius: 8px;
+
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+ul {
+  margin: 25px 0 35px;
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 10px;
+  color: #4a5568;
+}
+
+.closing-thanks {
+  margin-top: 35px;
+}
+
+
+/* =========================================
+   MENSAJE FINAL
+   ========================================= */
+
+.final-message {
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #101923,
+      #1c2b3b
+    );
+
+  color: white;
+}
+
+.final-message p {
+  color: rgba(255,255,255,0.85);
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.quote-mark {
+  font-family: Georgia, serif;
+  font-size: 90px;
+  line-height: 0.6;
+
+  color: rgba(255,255,255,0.2);
+
+  margin-bottom: 35px;
+}
+
+.signature {
+  margin-top: 45px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.signature strong {
+  color: white;
+  font-size: 18px;
+}
+
+.signature span {
+  color: rgba(255,255,255,0.55);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+  background: #070c11;
+  color: white;
+
+  text-align: center;
+
+  padding: 55px 25px;
+}
+
+.footer-brand {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 5px;
+
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: rgba(255,255,255,0.45);
+  font-size: 13px;
+}
+
+.footer-line {
+  width: 45px;
+  height: 1px;
+
+  background: rgba(255,255,255,0.2);
+
+  margin: 25px auto;
+}
+
+.copyright {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   CELULARES
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: 90vh;
+    padding: 35px 20px;
+  }
+
+  .brand {
+    margin-bottom: 45px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  main section {
+    padding: 70px 22px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .timeline::before {
+    left: 18px;
+  }
+
+  .timeline-item {
+    display: block;
+    padding-left: 45px;
+  }
+
+  .timeline-item::before {
+    left: 13px;
+  }
+
+  .timeline-year {
+    margin-bottom: 8px;
+  }
+
+  .timeline-content {
+    padding-left: 0;
+  }
+
+  .timeline-content h3 {
+    font-size: 19px;
+  }
+
+  .final-message p {
+    font-size: 18px;
+  }
+}
+```
