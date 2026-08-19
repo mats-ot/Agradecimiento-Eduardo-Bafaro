@@ -1,7 +1,8 @@
 ```css
 /* =========================================
-   ROQUE3D — EDUARDO BAFARO
-   Diseño responsive para NFC / celular
+   ROQUE3D
+   Eduardo Bafaro
+   Diseño elegante y tradicional
    ========================================= */
 
 * {
@@ -15,231 +16,139 @@ html {
 }
 
 body {
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
+  background: #f8f7f4;
+  color: #292929;
 
-  background: #f5f7fa;
-  color: #18202a;
-  line-height: 1.75;
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  line-height: 1.85;
 }
 
 
 /* =========================================
-   HERO
+   ENCABEZADO
    ========================================= */
 
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.encabezado {
+  max-width: 820px;
+  margin: 0 auto;
+
   text-align: center;
 
-  background:
-    radial-gradient(circle at 50% 20%, #263b55 0%, #101923 45%, #070c11 100%);
-
-  color: white;
-  padding: 40px 24px;
+  padding: 70px 25px 65px;
 }
 
-.hero-content {
-  max-width: 600px;
-}
+.marca {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 
-.brand {
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 13px;
+  font-weight: 600;
+
   letter-spacing: 5px;
+
+  color: #555;
+
   margin-bottom: 55px;
 }
 
-.brand span,
-.footer-brand span {
-  opacity: 0.65;
+.ornamento {
+  font-size: 12px;
+
+  color: #9b8060;
+
+  margin-bottom: 25px;
 }
 
-.nfc-icon {
-  width: 76px;
-  height: 76px;
+.encabezado h1 {
+  font-size: clamp(42px, 9vw, 66px);
 
-  margin: 0 auto 35px;
+  font-weight: normal;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 1.15;
 
-  border: 1px solid rgba(255,255,255,0.4);
-  border-radius: 50%;
+  color: #222;
+
+  margin-bottom: 18px;
+}
+
+.bajada {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 
   font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: 700;
 
-  background: rgba(255,255,255,0.05);
-}
-
-.hero h1 {
-  font-size: clamp(40px, 10vw, 72px);
-  line-height: 1.1;
-  font-weight: 300;
-  letter-spacing: -2px;
-}
-
-.subtitle {
-  margin-top: 22px;
-  font-size: 17px;
-  color: rgba(255,255,255,0.72);
-}
-
-.scroll-hint {
-  margin-top: 70px;
-  font-size: 12px;
-  letter-spacing: 2px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
+
+  letter-spacing: 3px;
+
+  color: #777;
 }
 
 
 /* =========================================
-   SECCIONES
+   CONTENIDO
    ========================================= */
 
-main section {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 90px 25px;
+main {
+  width: 100%;
 }
 
-.section-number {
-  display: block;
+.seccion,
+.cierre {
+  max-width: 760px;
 
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 3px;
+  margin: 0 auto;
 
-  color: #718096;
+  padding: 70px 28px;
+}
 
-  margin-bottom: 14px;
+.seccion:first-child {
+  padding-top: 20px;
 }
 
 h2 {
-  font-size: clamp(30px, 7vw, 44px);
-  line-height: 1.15;
-  font-weight: 600;
-  letter-spacing: -1px;
+  font-size: 30px;
 
-  margin-bottom: 35px;
+  font-weight: normal;
+
+  text-align: center;
+
+  color: #292929;
+
+  margin-bottom: 25px;
+}
+
+.separador {
+  width: 45px;
+  height: 1px;
+
+  background: #9b8060;
+
+  margin: 0 auto 42px;
 }
 
 p {
   font-size: 17px;
-  color: #4a5568;
-  margin-bottom: 22px;
+
+  color: #4b4b4b;
+
+  margin-bottom: 27px;
+
+  text-align: left;
 }
 
 strong {
-  color: #202b38;
-}
+  color: #292929;
 
-
-/* =========================================
-   INTRO
-   ========================================= */
-
-.intro {
-  background: #ffffff;
-}
-
-
-/* =========================================
-   TIMELINE
-   ========================================= */
-
-.timeline-section {
-  background: #f5f7fa;
-}
-
-.timeline {
-  position: relative;
-  margin-top: 50px;
-}
-
-.timeline::before {
-  content: "";
-
-  position: absolute;
-  left: 88px;
-  top: 0;
-  bottom: 0;
-
-  width: 1px;
-
-  background: #cbd5e0;
-}
-
-.timeline-item {
-  position: relative;
-
-  display: grid;
-  grid-template-columns: 110px 1fr;
-
-  margin-bottom: 50px;
-}
-
-.timeline-item::before {
-  content: "";
-
-  position: absolute;
-
-  left: 83px;
-  top: 7px;
-
-  width: 10px;
-  height: 10px;
-
-  border-radius: 50%;
-
-  background: #718096;
-  border: 3px solid #f5f7fa;
-}
-
-.timeline-year {
-  font-size: 12px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #718096;
-
-  padding-right: 20px;
-}
-
-.timeline-content {
-  padding-left: 25px;
-}
-
-.timeline-content h3 {
-  font-size: 21px;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.timeline-content p {
-  font-size: 15px;
-}
-
-
-/* =========================================
-   LABORATORIO
-   ========================================= */
-
-.laboratorio {
-  background: white;
+  font-weight: bold;
 }
 
 
@@ -247,91 +156,89 @@ strong {
    AGRADECIMIENTOS
    ========================================= */
 
-.thanks {
-  background: #eef2f6;
+.agradecimientos {
+  border-top: 1px solid #dedbd5;
 }
 
-.phone {
-  display: inline-block;
+.subtitulo {
+  margin-top: 38px;
+  margin-bottom: 20px;
 
-  margin: 5px 0 25px;
-  padding: 12px 20px;
+  font-size: 17px;
 
-  background: white;
-  border-radius: 8px;
+  color: #4b4b4b;
+}
 
-  font-size: 20px;
-  font-weight: 600;
+.telefono {
+  text-align: center;
+
+  font-size: 19px;
+
   letter-spacing: 2px;
 
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  color: #555;
+
+  margin: 5px 0 35px;
 }
 
 ul {
-  margin: 25px 0 35px;
-  padding-left: 25px;
+  margin: 0 0 35px 25px;
 }
 
 li {
-  margin-bottom: 10px;
-  color: #4a5568;
-}
+  padding-left: 7px;
 
-.closing-thanks {
-  margin-top: 35px;
+  margin-bottom: 9px;
+
+  font-size: 16px;
+
+  color: #4b4b4b;
 }
 
 
 /* =========================================
-   MENSAJE FINAL
+   CIERRE
    ========================================= */
 
-.final-message {
+.cierre {
   text-align: center;
 
-  background:
-    linear-gradient(
-      135deg,
-      #101923,
-      #1c2b3b
-    );
-
-  color: white;
+  padding-top: 45px;
+  padding-bottom: 90px;
 }
 
-.final-message p {
-  color: rgba(255,255,255,0.85);
-  font-size: 20px;
-  line-height: 1.8;
+.cierre .separador {
+  margin-bottom: 45px;
 }
 
-.quote-mark {
-  font-family: Georgia, serif;
-  font-size: 90px;
-  line-height: 0.6;
-
-  color: rgba(255,255,255,0.2);
-
-  margin-bottom: 35px;
-}
-
-.signature {
-  margin-top: 45px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.signature strong {
-  color: white;
+.cierre > p:first-of-type {
   font-size: 18px;
+
+  line-height: 1.9;
+
+  text-align: center;
+
+  color: #444;
 }
 
-.signature span {
-  color: rgba(255,255,255,0.55);
-  font-size: 14px;
-  letter-spacing: 1px;
+.despedida {
+  margin-top: 50px;
+
+  margin-bottom: 5px;
+
+  text-align: center;
+
+  font-size: 17px;
+}
+
+.firma {
+  text-align: center;
+
+  font-size: 25px;
+
+  font-style: italic;
+
+  color: #292929;
 }
 
 
@@ -340,39 +247,48 @@ li {
    ========================================= */
 
 footer {
-  background: #070c11;
-  color: white;
+  border-top: 1px solid #dedbd5;
 
   text-align: center;
 
-  padding: 55px 25px;
+  padding: 45px 20px 50px;
 }
 
-.footer-brand {
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: 5px;
+.marca-footer {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 
-  margin-bottom: 20px;
+  font-size: 12px;
+
+  letter-spacing: 4px;
+
+  color: #555;
+}
+
+.linea-footer {
+  width: 35px;
+  height: 1px;
+
+  background: #c7b69e;
+
+  margin: 20px auto;
 }
 
 footer p {
-  color: rgba(255,255,255,0.45);
-  font-size: 13px;
-}
+  text-align: center;
 
-.footer-line {
-  width: 45px;
-  height: 1px;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 
-  background: rgba(255,255,255,0.2);
+  font-size: 10px;
 
-  margin: 25px auto;
-}
+  color: #999;
 
-.copyright {
-  font-size: 11px;
-  letter-spacing: 1px;
+  margin: 0;
 }
 
 
@@ -382,58 +298,43 @@ footer p {
 
 @media (max-width: 600px) {
 
-  .hero {
-    min-height: 90vh;
-    padding: 35px 20px;
+  .encabezado {
+    padding: 55px 24px 50px;
   }
 
-  .brand {
+  .marca {
     margin-bottom: 45px;
   }
 
-  .hero h1 {
-    font-size: 42px;
+  .encabezado h1 {
+    font-size: 43px;
+
+    letter-spacing: -0.5px;
   }
 
-  .subtitle {
-    font-size: 16px;
+  .bajada {
+    font-size: 11px;
+
+    letter-spacing: 2.5px;
   }
 
-  main section {
-    padding: 70px 22px;
+  .seccion,
+  .cierre {
+    padding: 55px 25px;
+  }
+
+  h2 {
+    font-size: 28px;
   }
 
   p {
     font-size: 16px;
+
+    line-height: 1.8;
   }
 
-  .timeline::before {
-    left: 18px;
-  }
-
-  .timeline-item {
-    display: block;
-    padding-left: 45px;
-  }
-
-  .timeline-item::before {
-    left: 13px;
-  }
-
-  .timeline-year {
-    margin-bottom: 8px;
-  }
-
-  .timeline-content {
-    padding-left: 0;
-  }
-
-  .timeline-content h3 {
-    font-size: 19px;
-  }
-
-  .final-message p {
-    font-size: 18px;
+  .cierre > p:first-of-type {
+    font-size: 17px;
   }
 }
 ```
